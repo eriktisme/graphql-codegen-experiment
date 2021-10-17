@@ -1,0 +1,17 @@
+scalar Date
+
+type Query {
+    upcomingEvents: [Event!]!
+}
+
+type Event {
+    id: ID!
+    title: String!
+    date: Date!
+    location: Location!
+}
+
+type Location {
+    name: String!
+    address: String!
+}
